@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fdfcfb;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+header {
+  background-image: url('background gallery.jpg');
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-style: italic;
+  color: #ccc;
+}
+
+
+nav {
+  background-color: #34495e;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+
+.gallery-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+
+footer {
+  background-color: #2c3e50;
+  color: #ddd;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+footer p:last-child {
+  color: gold;
+  font-weight: bold;
+  margin-top: 5px;
+}
